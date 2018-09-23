@@ -1,0 +1,22 @@
+{% extends 'base.html.twig'%}
+
+{% block title %}Article{% endblock %}
+{% block bodyClass %}class = "post"{% endblock %}
+{% block body %}
+    <header>
+        <div class="vertical-align">
+            <h1> {{ article.title }} </h1>
+        </div>
+    </header>
+    <main>
+        <article>
+            <div class="post-footer">
+                <span class="author">Author: {{ article.author }}</span>
+                <span class="date">{{ article.date}}</span>
+            </div>
+            <div class="post-content">
+                {{ article.content }}
+            </div>
+        </article>
+    </main>
+{% endblock %}

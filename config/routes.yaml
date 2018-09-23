@@ -1,0 +1,15 @@
+index:
+   path: /
+   controller: App\Controller\Index::index
+about:
+   path: /about
+   controller: App\Controller\Index::about
+login:
+   path: /login
+   controller: App\Controller\Index::login
+registration:
+   path: /registration
+   controller: App\Controller\Index::registration
+article:
+   path: /article
+   controller: App\Controller\Index::article

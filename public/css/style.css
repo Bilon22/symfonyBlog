@@ -1,0 +1,405 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700&subset=latin-ext");
+body {
+  background: #ededed;
+  line-height: 1.6;
+  font-weight: 300;
+  color: #222222;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  font-family: Montserrat, sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: #222222;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: right;
+  background: #222222;
+  height: 40px;
+  z-index: 999;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: right;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 15px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #fff;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+nav ul li a:hover {
+  background: #FFDC00;
+  color: #222222;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+header {
+  position: relative;
+  margin-top: 40px;
+  height: 94vh;
+  background: url(../img/header2.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+header .vertical-align {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  width: 40%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-weight: 400;
+  padding: 20px;
+  border-radius: 5px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+header .vertical-align h1 {
+  margin: 0;
+}
+
+header .vertical-align button {
+  background: #FFDC00;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+header .vertical-align button:hover {
+  background: #2ECC40;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+main {
+  text-align: center;
+}
+
+main .posts {
+  width: 90%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+/* wlaczyc po dodaniu kolumn */
+main .posts .posts-col {
+  width: 31%;
+  margin: 10px 1%;
+  float: left;
+}
+
+main .posts .post {
+  /*width: 98%;*/
+  width: 31%;
+  float: left;
+  margin: 30px 1%;
+  background: #fff;
+  text-align: justify;
+  padding: 20px;
+  border-bottom: 7px solid #2ECC40;
+  position: relative;
+}
+
+main .posts .post h3 {
+  font-weight: 700;
+  text-align: left;
+  font-size: 16px;
+  margin: 7px 0 0 0;
+}
+
+main .posts .post h3 a {
+  display: block;
+}
+
+main .posts .post h3 a:hover {
+  color: #2ECC40;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+main .posts .post .post-footer {
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+main .posts .post .post-footer span {
+  margin-right: 10px;
+}
+
+main .posts .post:before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 7px;
+  right: 0;
+  bottom: -7px;
+  background: #FFDC00;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+main .posts .post:hover:before {
+  width: 0%;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+main .posts .post:hover:after {
+  height: 50px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+main .posts .post:after {
+  content: "";
+  width: 80px;
+  height: 0px;
+  background: #ededed;
+  position: absolute;
+  right: -30px;
+  top: -15px;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+main .pagination {
+  margin-bottom: 50px;
+}
+
+main .pagination button {
+  border: none;
+  outline: none;
+  background: #fff;
+  padding: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+main .pagination button.page {
+  padding: 5px 10px;
+}
+
+main .pagination button.active {
+  font-weight: 700;
+}
+
+main .pagination button:hover {
+  color: #2ECC40;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+footer {
+  background: #222222;
+  color: #fff;
+  padding: 2px;
+}
+
+footer .column {
+  width: 50%;
+  float: left;
+  padding: 50px;
+  font-size: 14px;
+}
+
+footer .column ul {
+  list-style-type: none;
+}
+
+footer .column ul li a {
+  color: #fff;
+}
+
+footer .column ul li:after {
+  content: "•";
+  margin-left: 10px;
+}
+
+footer .column h4 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #2ECC40;
+}
+
+footer .column:first-child {
+  text-align: right;
+}
+
+footer .column:first-child h4 {
+  color: #FFDC00;
+}
+
+body.login {
+  background: url(../img/header.jpg);
+  background-position: bottom;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body.login main {
+  top: 40px;
+  position: relative;
+}
+
+body.login main .login-popup {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin: 50px auto;
+  width: 40%;
+  border-radius: 10px;
+  color: #fff;
+}
+
+body.login main .login-popup input {
+  display: block;
+  width: 300px;
+  margin: 10px auto;
+  border: 1px solid #ededed;
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+body.login main .login-popup button {
+  background: #2ECC40;
+  color: #222222;
+  padding: 7px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+body.login main .login-popup button:hover {
+  background: #FFDC00;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+body.login footer {
+  position: absolute;
+  bottom: 0;
+  top: auto;
+  width: 100%;
+}
+
+body.login footer .column {
+  padding: 30px;
+}
+
+body.login.signup footer .column {
+  padding: 20px;
+}
+
+body.post header {
+  height: 60vh;
+}
+
+body.post header .vertical-align {
+  width: 80%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body.post main article {
+  padding: 20px;
+  border-radius: 20px;
+  top: -50px;
+  background: #fff;
+  z-index: 9999;
+  text-align: justify;
+  position: relative;
+  width: 75%;
+  margin: 0 auto;
+}
+
+body.post main article .post-footer {
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+body.post main article .post-footer span {
+  margin-right: 10px;
+}
+
+body.post main #comments {
+  text-align: left;
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+body.post main #comments .comments-wrapper {
+  padding: 15px 50px;
+}
+
+body.post main #comments .comments-wrapper .comment {
+  margin: 20px 0;
+  border-bottom: 3px solid #2ECC40;
+}
+
+body.post main #comments .comments-wrapper .comment .com-header {
+  padding-bottom: 7px;
+  border-bottom: 1px solid #ccc;
+  display: inline-block;
+}
+
+body.post main #comments .comments-wrapper .comment .com-header strong {
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+
+body.post main #comments .comments-wrapper .comment .com-header .com-data {
+  font-size: 13px;
+}
+/*# sourceMappingURL=style.css.map */

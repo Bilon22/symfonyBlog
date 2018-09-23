@@ -1,0 +1,13 @@
+{% extends 'base.html.twig'%}
+
+{% block title %}Article Create{% endblock %}
+{% block bodyClass %}class = "login"{% endblock %}
+{% block body %}
+    <main>
+        <div class="login-popup">
+            {{ form_start(form) }}
+            {{ form_widget(form) }}
+            {{ form_end(form) }}
+        </div> 
+    </main>   
+{% endblock %}
